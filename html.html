@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Водичка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <h1 class="logo">Водичка</h1>
+      <div class="header__right">
+        <p class="cart">В корзине: <span id="cart-count">0</span></p>
+        <button class="theme-btn" id="theme-btn">Темная тема</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <h2 class="hero__title">Свежая вода с доставкой на дом</h2>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <h2 class="section-title">Наша вода</h2>
+
+        <div class="products-grid">
+          <article class="card">
+            <div class="card__image">
+              <img src="https://супервольт.рф/upload/iblock/226/ecc1u76j347xz3m2316kcq62mh1ik3lo.jpg" alt="Бутылка воды">
+            </div>
+            <h3 class="card__title">Вода 0.5 л</h3>
+            <p class="card__price">50 ₽</p>
+            <div class="card__actions">
+              <button class="buy-btn">В корзину</button>
+              <button class="minus-btn">-</button>
+            </div>
+            <p class="card__counter">Добавлено: <span class="item-count">0</span></p>
+          </article>
+
+          <article class="card">
+            <div class="card__image">
+              <img src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-glass-of-water-png-image_13376296.png" alt="Стакан воды">
+            </div>
+            <h3 class="card__title">Стакан воды</h3>
+            <p class="card__price">30 ₽</p>
+            <div class="card__actions">
+              <button class="buy-btn">В корзину</button>
+              <button class="minus-btn">-</button>
+            </div>
+            <p class="card__counter">Добавлено: <span class="item-count">0</span></p>
+          </article>
+
+          <article class="card">
+            <div class="card__image">
+              <img src="https://cdn.vseinstrumenti.ru/images/goods/rashodnye-materialy-i-osnastka/rashodnye-materialy-dlya-sadovoj-tehniki/5276065/2400x1600/143540312.jpg">
+            </div>
+            <h3 class="card__title">Вода 5 л</h3>
+            <p class="card__price">120 ₽</p>
+            <div class="card__actions">
+              <button class="buy-btn">В корзину</button>
+              <button class="minus-btn">-</button>
+            </div>
+            <p class="card__counter">Добавлено: <span class="item-count">0</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="container feature__inner">
+        <h2 class="section-title">До конца акции осталось</h2>
+        <p class="feature__text" id="timer-text">Загрузка...</p>
+        <p class="feature__note">Скидка 20% на всю воду</p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="container">
+        <h2 class="section-title">Форма обратной связи</h2>
+        <form class="form" id="feedback-form">
+          <label class="form__label">
+            1. Как вас зовут?
+            <input class="form__input" type="text" placeholder="Введите имя" required>
+          </label>
+
+          <label class="form__label">
+            2. Сколько вам лет?
+            <input class="form__input" type="number" placeholder="Введите возраст" required>
+          </label>
+
+          <label class="form__label">
+            3. Из какого вы города?
+            <input class="form__input" type="text" placeholder="Введите город" required>
+          </label>
+          <label class="form__label">
+            4. Ваш отзыв о магазине
+            <textarea class="form__textarea" placeholder="Напишите отзыв" required></textarea>
+          </label>
+
+          <button class="form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Vodichka</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
